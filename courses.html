@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Madrasa Courses</title>
+
+    <link
+      rel="icon"
+      type="img/png"
+      href="./imgs/ChatGPT Image Apr 20, 2025, 08_56_36 PM.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script>
+      (function () {
+        // Initialize EmailJS with your public key
+        emailjs.init("2IvGoXYgdU8rgRKgv"); // Replace with your actual EmailJS public key
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="c-container">
+      <header class="c-header">
+        <div class="c-header-content">
+          <h1>Madrasa Courses</h1>
+          <div class="theme-toggle">
+            <button id="themeToggle">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="c-search-container">
+          <input type="text" id="searchInput" placeholder="Search courses..." />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="category-filters">
+          <button class="category-btn active" data-category="all">
+            All Courses
+          </button>
+          <button class="category-btn" data-category="quran">Qur'an</button>
+          <button class="category-btn" data-category="hadith">Hadith</button>
+          <button class="category-btn" data-category="fiqh">Fiqh</button>
+          <button class="category-btn" data-category="arabic">Arabic</button>
+        </div>
+      </header>
+
+      <main class="c-main-content">
+        <div class="courses-grid" id="coursesGrid">
+          <!-- Courses will be dynamically inserted here -->
+        </div>
+
+        <div class="course-detail" id="courseDetail">
+          <div class="course-detail-content">
+            <button class="close-btn" id="closeDetail">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="course-detail-header">
+              <h2 id="detailTitle"></h2>
+              <span class="course-level" id="detailLevel"></span>
+            </div>
+            <div class="course-detail-body">
+              <div class="course-info">
+                <div class="info-item">
+                  <i class="fas fa-clock"></i>
+                  <span id="detailDuration"></span>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-user"></i>
+                  <span id="detailTeacher"></span>
+                </div>
+              </div>
+              <p class="course-description" id="detailDescription"></p>
+              <button class="enroll-btn">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/courses-script.js"></script>
+  </body>
+</html>

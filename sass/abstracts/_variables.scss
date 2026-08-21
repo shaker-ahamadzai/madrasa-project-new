@@ -1,0 +1,53 @@
+/*
+
+| Color Name    | Hex Code  | Usage                   |
+| ------------- | --------- | ----------------------- |
+| Deep Green    | `#005F40` | Primary color           |
+| Sand Beige    | `#F4EBD0` | Backgrounds/Light theme |
+| Midnight Blue | `#002D40` | Footer/Header           |
+| Gold Accent   | `#D4AF37` | Highlights/CTA Buttons  |
+| White         | `#FFFFFF` | Content backgrounds     |
+
+*/
+
+// main page variables
+$color-primary: #005f40;
+$color-midnight-blue: #002d40;
+$color-light-theme: #f4ebd0;
+$color-gray-dark: #333;
+$color-gray-light: #ccc;
+$color-golden: #d4af37;
+$color-white: #fff;
+$color-black: #000;
+
+// blogpost page Variables
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$text-color: #333;
+$light-gray: #f5f6fa;
+$border-color: #dcdde1;
+
+// course pagse variable
+
+$c-primary-color: #b8860b; // Dark Goldenrod
+$c-secondary-color: #daa520; // Goldenrod
+$c-accent-color: #ffd700; // Gold
+$c-text-color: #333;
+$c-light-bg: #ffffff; // White
+$c-card-bg: #fff8e7; // Light golden background for cards
+$c-dark-bg: #1a1a1a;
+$c-card-shadow: 0 2px 8px rgba(184, 134, 11, 0.1);
+$transition: all 0.3s ease;
+
+$sidebar-width: 35rem;
+$sidebar-collapsed-width: 6rem;
+$header-height: 6rem;
+$transition-speed: 0.3s;
+
+$grid-width: 114rem;
+$gutter-verticle: 8rem;
+$gutter-verticle-sm: 10rem;
+
+$gutter-horizontal-sm: 3rem;
+$gutter-horizontal: 6rem;
+$gutter-horizontal-lg: 8rem;

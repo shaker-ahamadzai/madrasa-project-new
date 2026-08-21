@@ -1,0 +1,28 @@
+.search-container {
+  position: relative;
+  padding-right: 1.8rem;
+  background-color: rgba($color-white, 0.8);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  input {
+    padding: 1rem 0.5rem;
+    padding-right: 1.5rem;
+    border: none;
+    outline: none;
+    font-family: "Arial", sans-serif;
+    background-color: transparent;
+    color: $c-primary-color;
+    font-size: 1.6rem;
+    &::placeholder {
+      color: $color-golden;
+    }
+  }
+
+  i {
+    color: rgba($color-golden, 0.7);
+    position: absolute;
+    top: 50%;
+    right: 1%;
+    transform: translate(0, -50%);
+  }
+}

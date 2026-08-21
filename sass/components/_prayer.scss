@@ -1,0 +1,83 @@
+#prayers-container {
+  position: relative;
+  // background-color: red;
+}
+
+.prayer {
+  width: 18rem;
+  height: 35rem;
+  border-radius: 1rem 0 0 1rem;
+  overflow: auto;
+  // overflow: auto;
+  position: relative;
+  box-shadow: 0 0 10px rgba($color-black, 0.3);
+  margin: 2rem 0;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 25px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba($color-black, 0.3);
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba($color-gray-light, 0.5);
+    border-radius: 5px;
+  }
+
+  &__time--date {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($color-golden, 1);
+    color: $color-white;
+    padding: 0.8rem 0;
+    border-radius: 1rem 0rem 1rem 0;
+    font-size: 2.2rem;
+    letter-spacing: 0.15rem;
+    font-weight: 600;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  &__name {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    text-align: center;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+
+  &__time--num {
+    margin: 1rem auto;
+    width: 80%;
+    border-radius: 1rem;
+    background-color: $color-golden;
+    text-align: center;
+    color: $color-white;
+    font-size: 3.2rem;
+    font-weight: 400;
+    padding: 0.5rem 0rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+.prayer-active {
+  // color: red;
+  transform: scale(1.01);
+  border: 1px solid rgba($color-golden, 0.3);
+  box-shadow: 0 0 8px rgba($color-golden, 0.3);
+
+  .prayer__time--name {
+    background-color: $color-golden;
+  }
+}
